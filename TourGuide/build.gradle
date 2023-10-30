@@ -19,9 +19,14 @@ dependencies {
     api 'org.springframework.boot:spring-boot-starter-validation:3.1.1'
     api 'org.springframework.boot:spring-boot-starter-web:3.1.1'
     api 'org.apache.commons:commons-lang3:3.12.0'
-    api 'gpsUtil:gpsUtil:1.0.0'
-    api 'tripPricer:tripPricer:1.0.0'
-    api 'rewardCentral:rewardCentral:1.0.0'
+
+//    api 'gpsUtil:gpsUtil:1.0.0'
+//    api 'tripPricer:tripPricer:1.0.0'
+//    api 'rewardCentral:rewardCentral:1.0.0'
+    implementation files('libs/gpsUtil.jar')
+    implementation files('libs/RewardCentral.jar')
+    implementation files('libs/TripPricer.jar')
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test:3.1.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
 }
@@ -29,8 +34,8 @@ dependencies {
 group = 'com.openclassrooms'
 version = '0.0.1-SNAPSHOT'
 description = 'tourguide'
-java.sourceCompatibility = JavaVersion.VERSION_21
-java.targetCompatibility = JavaVersion.VERSION_21
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
 
 publishing {
     publications {

@@ -1,0 +1,17 @@
+
+s	java:S135'"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
+w
+java:S2629."\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Á¡ÆÇùÿÿÿÿ
+r
+java:S26292"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ô¶Íž
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(šó˜Øøÿÿÿÿ
+V
+java:S2438";Replace "this" of type Thread with an instance of Runnable.(™Ýƒ’øÿÿÿÿ
+\
+java:S3457."AFormat specifiers should be used instead of string concatenation.(Á¡ÆÇùÿÿÿÿ
+f
+java:S16120"PReplace this lambda with method reference 'tourGuideService::trackUserLocation'.(Ýëå²
+W
+java:S34572"AFormat specifiers should be used instead of string concatenation.(ô¶Íž
+t
+java:S21427"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
