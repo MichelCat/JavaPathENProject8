@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.openclassrooms.tourguide.TestTourGuideService" tests="5" skipped="1" failures="0" errors="0" timestamp="2023-11-16T00:08:25" hostname="DESKTOP-5737TIR" time="0.185">
+  <properties/>
+  <testcase name="getUserLocation()" classname="com.openclassrooms.tourguide.TestTourGuideService" time="0.109"/>
+  <testcase name="addUser()" classname="com.openclassrooms.tourguide.TestTourGuideService" time="0.002"/>
+  <testcase name="getAllUsers()" classname="com.openclassrooms.tourguide.TestTourGuideService" time="0.001"/>
+  <testcase name="trackUser()" classname="com.openclassrooms.tourguide.TestTourGuideService" time="0.067"/>
+  <testcase name="getNearbyAttractions()" classname="com.openclassrooms.tourguide.TestTourGuideService" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[01:08:25.374 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+01:08:25.440 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+01:08:25.443 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+01:08:25.445 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

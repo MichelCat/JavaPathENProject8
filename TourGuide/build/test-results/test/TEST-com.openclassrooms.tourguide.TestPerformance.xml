@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.openclassrooms.tourguide.TestPerformance" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-16T00:08:25" hostname="DESKTOP-5737TIR" time="57.733">
+  <properties/>
+  <testcase name="highVolumeTrackLocation()" classname="com.openclassrooms.tourguide.TestPerformance" time="7.556"/>
+  <testcase name="highVolumeGetRewards()" classname="com.openclassrooms.tourguide.TestPerformance" time="50.177"/>
+  <system-out><![CDATA[01:08:25.519 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+highVolumeTrackLocation: Time Elapsed: 7 seconds.
+01:08:33.075 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+highVolumeGetRewards: Time Elapsed: 50 seconds.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

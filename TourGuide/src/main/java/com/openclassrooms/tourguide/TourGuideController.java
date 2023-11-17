@@ -41,6 +41,16 @@ public class TourGuideController {
         // The distance in miles between the user's location and each of the attractions.
         // The reward points for visiting each Attraction.
         //    Note: Attraction reward points can be gathered from RewardsCentral
+
+    // TODO : modifiez cette méthode pour ne plus renvoyer de liste d'attractions.
+    // Au lieu de cela: obtenez les cinq attractions touristiques les plus proches de l'utilisateur, quelle que soit leur distance.
+    // Renvoie un nouvel objet JSON qui contient:
+    // Nom de l'attraction touristique,
+    // Attractions touristiques latitude/longitude,
+    // Localisation de l'utilisateur lat/long,
+    // La distance en miles entre l'emplacement de l'utilisateur et chacune des attractions.
+    // Les points de récompense pour la visite de chaque attraction.
+    // Remarque: les points de récompense d'attraction peuvent être collectés depuis RewardsCentral
     @RequestMapping("/getNearbyAttractions") 
     public List<Attraction> getNearbyAttractions(@RequestParam String userName) {
     	VisitedLocation visitedLocation = tourGuideService.getUserLocation(getUser(userName));

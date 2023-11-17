@@ -33,3 +33,13 @@ r
 Bsrc/test/java/com/openclassrooms/tourguide/TestRewardsService.java,f\a\fa11caa21752c63e386a4f004ea30d7ed8d1c5bc
 >
 .gitlab-ci.yml,5\8\587d266bb27a4dc3022bbed44dfa19849df3044c
+t
+Dsrc/test/java/com/openclassrooms/tourguide/TestTourGuideService.java,a\a\aa1f3325474f5a34676ab69ded4abdb12cf88d99
+y
+Isrc/test/java/com/openclassrooms/tourguide/TourguideApplicationTests.java,8\d\8dbd6d9c809faa4d02322ad086c681396c4f838d
+v
+Fsrc/main/java/com/openclassrooms/tourguide/model/NearbyAttraction.java,7\4\74797188cc8ac327653498682d7a832a7c6390a1
+7
+gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
+v
+Fsrc/main/java/com/openclassrooms/tourguide/model/NearByAttraction.java,e\0\e0dc9a295f56f4695633ade1a47131def9a9f7f8

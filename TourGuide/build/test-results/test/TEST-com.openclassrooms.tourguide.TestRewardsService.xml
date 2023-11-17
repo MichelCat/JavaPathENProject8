@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.openclassrooms.tourguide.TestRewardsService" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-16T00:09:23" hostname="DESKTOP-5737TIR" time="14.11">
+  <properties/>
+  <testcase name="nearAllAttractions()" classname="com.openclassrooms.tourguide.TestRewardsService" time="13.63"/>
+  <testcase name="userGetRewards()" classname="com.openclassrooms.tourguide.TestRewardsService" time="0.454"/>
+  <testcase name="isWithinAttractionProximity()" classname="com.openclassrooms.tourguide.TestRewardsService" time="0.025"/>
+  <system-out><![CDATA[01:09:23.253 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+01:09:36.883 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
