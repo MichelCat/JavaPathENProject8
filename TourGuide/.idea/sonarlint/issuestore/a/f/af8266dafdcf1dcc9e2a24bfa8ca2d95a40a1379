@@ -1,20 +1,30 @@
 
+v
+java:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(é‚ƒÚ8ñº³¢¾1
 ‰
-java:S1488?"gImmediately return this expression instead of assigning it to the temporary variable "visitedLocation".(¿½ÂÙúÿÿÿÿ8ÙŸÕ¼1
-v	java:S115z"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïšä8ëŸÕ¼1
+java:S1488:"gImmediately return this expression instead of assigning it to the temporary variable "visitedLocation".(¿½ÂÙúÿÿÿÿ8ñº³¢¾1
+w	java:S115†"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïšä8ıº³¢¾1
 `
-java:S1155?">Use isEmpty() to check whether the collection is empty or not.(¿½ÂÙúÿÿÿÿ8ğŸÕ¼1
+java:S1155:">Use isEmpty() to check whether the collection is empty or not.(¿½ÂÙúÿÿÿÿ8€»³¢¾1
 t
-java:S6204I"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ß’°øùÿÿÿÿ8ñŸÕ¼1
+java:S6204D"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ß’°øùÿÿÿÿ8€»³¢¾1
+b
+java:S1854e"ERemove this useless assignment to local variable "nearByAttractions".(é‚ƒÚ8õêá¢¾1
+o
+java:S6204s"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¡şİ¤¾1
 W
-java:S1161o":Add the "@Override" annotation above this method signature(“–ış8ùŸÕ¼1
+java:S1161{":Add the "@Override" annotation above this method signature(“–ış8†»³¢¾1
 d
-java:S3457‰"AFormat specifiers should be used instead of string concatenation.(É°™˜øÿÿÿÿ8üŸÕ¼1
+java:S3457•"AFormat specifiers should be used instead of string concatenation.(É°™˜øÿÿÿÿ8ˆ»³¢¾1
 J
-java:S1602",Remove useless curly braces around statement(ßê™è8ıŸÕ¼1
+java:S1602™",Remove useless curly braces around statement(ßê™è8ˆ»³¢¾1
 <
-java:S2119–"Save and re-use this "Random".(éÖÃì8ÿŸÕ¼1
+java:S2119¢"Save and re-use this "Random".(éÖÃì8Š»³¢¾1
 <
-java:S2119œ"Save and re-use this "Random".(éÖÃì8€ Õ¼1
+java:S2119¨"Save and re-use this "Random".(éÖÃì8Š»³¢¾1
 A
-java:S2119 "Save and re-use this "Random".(—íø–şÿÿÿÿ8 Õ¼1
+java:S2119¬"Save and re-use this "Random".(—íø–şÿÿÿÿ8‹»³¢¾1
+U
+java:S1128"8Remove this unused import 'gpsUtil.location.Attraction'.(¢¶ñã8Œ£ï¢¾1
+U
+java:S1128"8Remove this unused import 'rewardCentral.RewardCentral'.(ÜğŞº8Œ£ï¢¾1

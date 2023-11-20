@@ -2,6 +2,9 @@ package com.openclassrooms.tourguide;
 
 import java.util.List;
 
+import com.openclassrooms.tourguide.model.NearByAttraction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +21,7 @@ import tripPricer.Provider;
 
 @RestController
 public class TourGuideController {
+    private Logger logger = LoggerFactory.getLogger(TourGuideController.class);
 
 	@Autowired
 	TourGuideService tourGuideService;
@@ -31,30 +35,25 @@ public class TourGuideController {
     public VisitedLocation getLocation(@RequestParam String userName) {
     	return tourGuideService.getUserLocation(getUser(userName));
     }
-    
-    //  TODO: Change this method to no longer return a List of Attractions.
- 	//  Instead: Get the closest five tourist attractions to the user - no matter how far away they are.
- 	//  Return a new JSON object that contains:
-    	// Name of Tourist attraction, 
-        // Tourist attractions lat/long, 
-        // The user's location lat/long, 
-        // The distance in miles between the user's location and each of the attractions.
-        // The reward points for visiting each Attraction.
-        //    Note: Attraction reward points can be gathered from RewardsCentral
 
-    // TODO : modifiez cette méthode pour ne plus renvoyer de liste d'attractions.
-    // Au lieu de cela: obtenez les cinq attractions touristiques les plus proches de l'utilisateur, quelle que soit leur distance.
-    // Renvoie un nouvel objet JSON qui contient:
-    // Nom de l'attraction touristique,
-    // Attractions touristiques latitude/longitude,
-    // Localisation de l'utilisateur lat/long,
-    // La distance en miles entre l'emplacement de l'utilisateur et chacune des attractions.
-    // Les points de récompense pour la visite de chaque attraction.
-    // Remarque: les points de récompense d'attraction peuvent être collectés depuis RewardsCentral
-    @RequestMapping("/getNearbyAttractions") 
-    public List<Attraction> getNearbyAttractions(@RequestParam String userName) {
+    /**
+     * Read - Get the closest five tourist attractions to the user - no matter how far away they are.
+     * Return a new JSON object that contains:
+     * Name of Tourist attraction,
+     * Tourist attractions lat/long,
+     * The user's location lat/long,
+     * The distance in miles between the user's location and each of the attractions.
+     * The reward points for visiting each Attraction.
+     *
+     * @param userName Username
+     * @return List of five tourist attractions closest to the user
+     *
+     */
+    @RequestMapping("/getNearbyAttractions")
+    public List<NearByAttraction> getNearbyAttractions(@RequestParam String userName) {
+        logger.debug("getNearbyAttractions");
     	VisitedLocation visitedLocation = tourGuideService.getUserLocation(getUser(userName));
-    	return tourGuideService.getNearByAttractions(visitedLocation);
+        return tourGuideService.getNearByAttractions(visitedLocation);
     }
     
     @RequestMapping("/getRewards") 

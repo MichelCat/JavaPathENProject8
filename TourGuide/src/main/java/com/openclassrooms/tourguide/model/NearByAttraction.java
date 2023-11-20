@@ -53,5 +53,5 @@ public class NearByAttraction {
      * Reward points for visiting the attraction
      */
     @NotNull
-    private int rewardPoints;
+    int rewardPoints;
 }

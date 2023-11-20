@@ -1,17 +1,17 @@
 package com.openclassrooms.tourguide;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 import java.util.UUID;
 
+import com.openclassrooms.tourguide.model.NearByAttraction;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import gpsUtil.GpsUtil;
-import gpsUtil.location.Attraction;
 import gpsUtil.location.VisitedLocation;
 import rewardCentral.RewardCentral;
 import com.openclassrooms.tourguide.helper.InternalTestHelper;
@@ -83,17 +83,19 @@ public class TestTourGuideService {
 		assertEquals(user.getUserId(), visitedLocation.userId);
 	}
 
-	@Disabled // Not yet implemented
+	/**
+	 * Tests the five tourist attractions closest to the user, regardless of their distance.
+	 */
 	@Test
 	public void getNearbyAttractions() {
+		// GIVEN
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
 		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
-
-		List<Attraction> attractions = tourGuideService.getNearByAttractions(visitedLocation);
-
+		// WHEN
+		List<NearByAttraction> nearByAttractions = tourGuideService.getNearByAttractions(visitedLocation);
 		tourGuideService.tracker.stopTracking();
-
-		assertEquals(5, attractions.size());
+		// THEN
+		assertThat(nearByAttractions.size()).isEqualTo(5);
 	}
 
 	public void getTripDeals() {

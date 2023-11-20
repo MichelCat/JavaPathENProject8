@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "33fb9609-83a6-45c1-9bf3-5db3f0f4c9a6",
+		"name": "TourGuide",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22533375"
+	},
+	"item": [
+		{
+			"name": "getNearbyAttractions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getNearbyAttractions?userName=internalUser1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getNearbyAttractions"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "internalUser1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

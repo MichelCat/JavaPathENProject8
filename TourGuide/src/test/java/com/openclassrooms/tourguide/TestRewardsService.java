@@ -52,7 +52,9 @@ public class TestRewardsService {
 		assertTrue(rewardsService.isWithinAttractionProximity(attraction, attraction));
 	}
 
-//	@Disabled // Needs fixed - can throw ConcurrentModificationException
+	/**
+	 * Testing a user's reward calculation for visits near an attraction that does not yet have a reward
+	 */
 	@Test
 	public void nearAllAttractions() {
 		rewardsService.setProximityBuffer(Integer.MAX_VALUE);

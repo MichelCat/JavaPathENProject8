@@ -43,3 +43,9 @@ Fsrc/main/java/com/openclassrooms/tourguide/model/NearbyAttraction.java,7\4\747
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 v
 Fsrc/main/java/com/openclassrooms/tourguide/model/NearByAttraction.java,e\0\e0dc9a295f56f4695633ade1a47131def9a9f7f8
+€
+Psrc/main/java/com/openclassrooms/tourguide/doc/TourGuide.postman_collection.json,7\a\7aa839d7ea46f7a02790ab015afa161e14d79e3e
+‚
+Rsrc/test/java/com/openclassrooms/tourguide/controller/TourGuideControllerTest.java,1\7\17321181db34c12f3758ea1d7779f1240f3eec1c
+€
+Psrc/test/java/com/openclassrooms/tourguide/controller/TourGuideControllerIT.java,7\f\7f2da95958987bdc6377324c8218f48c415de950
