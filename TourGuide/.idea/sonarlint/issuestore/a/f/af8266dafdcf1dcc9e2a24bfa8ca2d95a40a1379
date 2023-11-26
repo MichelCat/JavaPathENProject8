@@ -1,30 +1,33 @@
 
 v
-java:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(é‚ƒÚ8ñº³¢¾1
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(é‚ƒÚ8İÁ°ğ¿1
 ‰
-java:S1488:"gImmediately return this expression instead of assigning it to the temporary variable "visitedLocation".(¿½ÂÙúÿÿÿÿ8ñº³¢¾1
-w	java:S115†"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïšä8ıº³¢¾1
+java:S1488;"gImmediately return this expression instead of assigning it to the temporary variable "visitedLocation".(¿½ÂÙúÿÿÿÿ8ŞÁ°ğ¿1
+‰
+java:S1488["gImmediately return this expression instead of assigning it to the temporary variable "visitedLocation".(Àˆ—şÿÿÿÿÿ8ßÁ°ğ¿1
+‹
+java:S1488Z"iImmediately return this expression instead of assigning it to the temporary variable "completableFuture".(ì÷Íşÿÿÿÿ8ŠÍ±ğ¿1
+w	java:S115 "ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïšä8ëÁ°ğ¿1
 `
-java:S1155:">Use isEmpty() to check whether the collection is empty or not.(¿½ÂÙúÿÿÿÿ8€»³¢¾1
+java:S1155;">Use isEmpty() to check whether the collection is empty or not.(¿½ÂÙúÿÿÿÿ8ïÁ°ğ¿1
 t
-java:S6204D"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ß’°øùÿÿÿÿ8€»³¢¾1
+java:S6204E"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ß’°øùÿÿÿÿ8ğÁ°ğ¿1
+{
+java:S2142r"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8óÁ°ğ¿1
+L	java:S106s"+Replace this use of System.out by a logger.(Ÿ„Èäûÿÿÿÿ8ôÁ°ğ¿1
 b
-java:S1854e"ERemove this useless assignment to local variable "nearByAttractions".(é‚ƒÚ8õêá¢¾1
-o
-java:S6204s"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¡şİ¤¾1
-W
-java:S1161{":Add the "@Override" annotation above this method signature(“–ış8†»³¢¾1
+java:S1854"ERemove this useless assignment to local variable "nearByAttractions".(é‚ƒÚ8ôÁ°ğ¿1
+p
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ôÁ°ğ¿1
+X
+java:S1161•":Add the "@Override" annotation above this method signature(“–ış8öÁ°ğ¿1
 d
-java:S3457•"AFormat specifiers should be used instead of string concatenation.(É°™˜øÿÿÿÿ8ˆ»³¢¾1
+java:S3457¯"AFormat specifiers should be used instead of string concatenation.(É°™˜øÿÿÿÿ8øÁ°ğ¿1
 J
-java:S1602™",Remove useless curly braces around statement(ßê™è8ˆ»³¢¾1
+java:S1602³",Remove useless curly braces around statement(ßê™è8øÁ°ğ¿1
 <
-java:S2119¢"Save and re-use this "Random".(éÖÃì8Š»³¢¾1
+java:S2119¼"Save and re-use this "Random".(éÖÃì8úÁ°ğ¿1
 <
-java:S2119¨"Save and re-use this "Random".(éÖÃì8Š»³¢¾1
+java:S2119Â"Save and re-use this "Random".(éÖÃì8úÁ°ğ¿1
 A
-java:S2119¬"Save and re-use this "Random".(—íø–şÿÿÿÿ8‹»³¢¾1
-U
-java:S1128"8Remove this unused import 'gpsUtil.location.Attraction'.(¢¶ñã8Œ£ï¢¾1
-U
-java:S1128"8Remove this unused import 'rewardCentral.RewardCentral'.(ÜğŞº8Œ£ï¢¾1
+java:S2119Æ"Save and re-use this "Random".(—íø–şÿÿÿÿ8úÁ°ğ¿1

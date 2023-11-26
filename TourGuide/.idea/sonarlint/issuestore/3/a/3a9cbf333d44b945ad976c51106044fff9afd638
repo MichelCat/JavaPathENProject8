@@ -1,3 +1,5 @@
 
-r
-java:S2159O"VRemove this call to "equals"; comparisons between unrelated types always return false.(¯çä@8â‚è¦¾1
+o
+java:S6204\"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8…ë•žÀ1
+^
+java:S1612["<Replace this lambda with method reference 'Entry::getValue'.( ƒÀšýÿÿÿÿ8…ë•žÀ1

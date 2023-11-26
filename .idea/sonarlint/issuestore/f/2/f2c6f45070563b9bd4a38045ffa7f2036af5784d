@@ -1,0 +1,9 @@
+
+Q	java:S125 "<This block of commented-out lines of code should be removed.(úúÈ÷
+]	java:S125:"<This block of commented-out lines of code should be removed.(¢¼¡ùÿÿÿÿ8÷ÍëœÀ1
+R
+java:S1854I"<Remove this useless assignment to local variable "allUsers".(³Ïüò
+?	java:S106U"+Replace this use of System.out by a logger.(±½Ñ%
+R
+java:S1854h"<Remove this useless assignment to local variable "allUsers".(³Ïüò
+@	java:S106v"+Replace this use of System.out by a logger.(Òõï³

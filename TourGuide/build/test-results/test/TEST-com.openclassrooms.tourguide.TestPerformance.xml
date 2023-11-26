@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.openclassrooms.tourguide.TestPerformance" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-20T16:46:29" hostname="DESKTOP-5737TIR" time="47.732">
-  <properties/>
-  <testcase name="highVolumeGetRewards()" classname="com.openclassrooms.tourguide.TestPerformance" time="47.732"/>
-  <system-out><![CDATA[17:46:29.865 [Test worker] INFO com.openclassrooms.tourguide.service.TourGuideService -- TestMode enabled
-highVolumeGetRewards: Time Elapsed: 47 seconds.
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

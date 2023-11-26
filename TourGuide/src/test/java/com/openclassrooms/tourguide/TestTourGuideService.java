@@ -35,7 +35,7 @@ public class TestTourGuideService {
 	@Test
 	public void getUserLocation() {
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
-		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
+		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user).join();
 		tourGuideService.tracker.stopTracking();
 		assertTrue(visitedLocation.userId.equals(user.getUserId()));
 	}
@@ -76,7 +76,7 @@ public class TestTourGuideService {
 	@Test
 	public void trackUser() {
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
-		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
+		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user).join();
 
 		tourGuideService.tracker.stopTracking();
 
@@ -90,7 +90,7 @@ public class TestTourGuideService {
 	public void getNearbyAttractions() {
 		// GIVEN
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
-		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user);
+		VisitedLocation visitedLocation = tourGuideService.trackUserLocation(user).join();
 		// WHEN
 		List<NearByAttraction> nearByAttractions = tourGuideService.getNearByAttractions(visitedLocation);
 		tourGuideService.tracker.stopTracking();

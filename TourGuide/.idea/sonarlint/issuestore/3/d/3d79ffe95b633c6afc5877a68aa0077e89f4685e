@@ -1,13 +1,25 @@
 
 L
-java:S1066B"/Merge this if statement with the enclosing one.(ÈË¦©8˜·É§¾1
+java:S1066>"/Merge this if statement with the enclosing one.(ÈË¦©8Î–„áÀ1
 †
-java:S1488c"dImmediately return this expression instead of assigning it to the temporary variable "statuteMiles".(‰ƒ´ºùÿÿÿÿ8ÀÎâ¾1
-E
-java:S1125N"(Remove the unnecessary boolean literals.(÷‹ó—8ÔÎâ¾1
-J
-java:S1125R"(Remove the unnecessary boolean literals.(“÷†Íûÿÿÿÿ8ÔÎâ¾1
-R
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8«¥Ã§¾1
+java:S1488w"dImmediately return this expression instead of assigning it to the temporary variable "statuteMiles".(‰ƒ´ºùÿÿÿÿ8Ñ–„áÀ1
+I
+java:S1602H",Remove useless curly braces around statement(‡ªé¤8ş–„áÀ1
+X	java:S125K"<This block of commented-out lines of code should be removed.(Š«Ç½8§…™áÀ1
+I
+java:S1602N",Remove useless curly braces around statement(‡ªé¤8—„áÀ1
 `
-java:S1128"CRemove this unused import 'java.util.concurrent.CompletableFuture'.(ôŞä´8«¥Ã§¾1
+java:S1612O"CReplace this lambda with method reference 'this::calculateRewards'.(Î‰†“8‚—„áÀ1
+{
+java:S2142\"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8†—„áÀ1
+L	java:S106]"+Replace this use of System.out by a logger.(Ÿ„Èäûÿÿÿÿ8‡—„áÀ1
+E
+java:S1125b"(Remove the unnecessary boolean literals.(÷‹ó—8ˆ—„áÀ1
+J
+java:S1125f"(Remove the unnecessary boolean literals.(“÷†Íûÿÿÿÿ8‰—„áÀ1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8“—„áÀ1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8”—„áÀ1
+b
+java:S1128"ERemove this unused import 'java.util.concurrent.locks.ReentrantLock'.(òªø8”—„áÀ1
