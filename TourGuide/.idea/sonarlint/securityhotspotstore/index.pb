@@ -49,3 +49,6 @@ Psrc/main/java/com/openclassrooms/tourguide/doc/TourGuide.postman_collection.jso
 Rsrc/test/java/com/openclassrooms/tourguide/controller/TourGuideControllerTest.java,1\7\17321181db34c12f3758ea1d7779f1240f3eec1c
 €
 Psrc/test/java/com/openclassrooms/tourguide/controller/TourGuideControllerIT.java,7\f\7f2da95958987bdc6377324c8218f48c415de950
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
