@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.openclassrooms.tourguide.controller.TourGuideControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-27T22:35:41" hostname="DESKTOP-5737TIR" time="0.072">
+  <properties/>
+  <testcase name="getNearbyAttractions_return200()" classname="com.openclassrooms.tourguide.controller.TourGuideControllerTest" time="0.072"/>
+  <system-out><![CDATA[2023-11-27T23:35:40.839+01:00  INFO 85372 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.openclassrooms.tourguide.controller.TourGuideControllerTest]: TourGuideControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-27T23:35:40.849+01:00  INFO 85372 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.openclassrooms.tourguide.TourguideApplication for test class com.openclassrooms.tourguide.controller.TourGuideControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-11-27T23:35:40.865+01:00  INFO 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : Starting TourGuideControllerTest using Java 17.0.7 with PID 85372 (started by mc386 in D:\IdeaProjects\JavaPathENProject8\TourGuide)
+2023-11-27T23:35:40.865+01:00 DEBUG 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-11-27T23:35:40.865+01:00  INFO 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2023-11-27T23:35:41.200+01:00  INFO 85372 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-27T23:35:41.201+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-27T23:35:41.202+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-27T23:35:41.211+01:00  INFO 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : Started TourGuideControllerTest in 0.359 seconds (process running for 43.404)
+2023-11-27T23:35:41.228+01:00  INFO 85372 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-27T23:35:41.229+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-27T23:35:41.230+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-27T23:35:41.265+01:00  WARN 85372 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.openclassrooms.tourguide.TourGuideController
+2023-11-27T23:35:41.266+01:00 DEBUG 85372 --- [    Test worker] c.o.tourguide.TourGuideController        : getNearbyAttractions
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getNearbyAttractions
+       Parameters = {userName=[internalUser1]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.openclassrooms.tourguide.TourGuideController
+           Method = com.openclassrooms.tourguide.TourGuideController#getNearbyAttractions(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"attractionName":"Roger Dean Stadium","attractionLatitude":26.890959,"attractionLongitude":-80.116577,"userLatitude":-41.490102,"userLongitude":-13.738881,"distance":6340.588384814216,"rewardPoints":32},{"attractionName":"Cinderella Castle","attractionLatitude":28.419411,"attractionLongitude":-81.5812,"userLatitude":-41.490102,"userLongitude":-13.738881,"distance":6478.767525819528,"rewardPoints":153},{"attractionName":"Zoo Tampa at Lowry Park","attractionLatitude":28.012804,"attractionLongitude":-82.469269,"userLatitude":-41.490102,"userLongitude":-13.738881,"distance":6496.343059725859,"rewardPoints":362},{"attractionName":"Franklin Park Zoo","attractionLatitude":42.302601,"attractionLongitude":-71.086731,"userLatitude":-41.490102,"userLongitude":-13.738881,"distance":6797.773864049046,"rewardPoints":471},{"attractionName":"Flatiron Building","attractionLatitude":40.741112,"attractionLongitude":-73.989723,"userLatitude":-41.490102,"userLongitude":-13.738881,"distance":6812.87693955952,"rewardPoints":362}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 import com.openclassrooms.tourguide.model.NearByAttraction;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,11 +26,16 @@ public class TestTourGuideService {
 	private TourGuideService tourGuideService;
 
 	@BeforeEach
-	private void setUpPerTest() {
+	private void setUpBeforeEach() {
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		InternalTestHelper.setInternalUserNumber(0);
 		tourGuideService = new TourGuideService(gpsUtil, rewardsService);
+	}
+
+	@AfterEach
+	private void cleanUpAfterEach() throws Exception {
+		InternalTestHelper.setInternalUserNumber(100);
 	}
 
 	@Test

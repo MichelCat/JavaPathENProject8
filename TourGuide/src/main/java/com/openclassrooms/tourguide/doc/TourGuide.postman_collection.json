@@ -30,6 +30,100 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getLocation?userName=internalUser1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getLocation"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "internalUser1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTripDeals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getTripDeals?userName=internalUser1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getTripDeals"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "internalUser1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRewards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getRewards?userName=internalUser1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getRewards"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "internalUser1"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

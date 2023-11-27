@@ -1,17 +1,17 @@
 
 ;
-java:S5786$"Remove this 'public' modifier.(ÎùÁˆ8Š§„¤¾1
+java:S5786*"Remove this 'public' modifier.(ÎùÁˆ8Š§„¤¾1
 ;
-java:S5786,"Remove this 'public' modifier.(¡²Åì8Š§„¤¾1
+java:S57862"Remove this 'public' modifier.(¡²Åì8Š§„¤¾1
 @
-java:S5786="Remove this 'public' modifier.(©èíØûÿÿÿÿ8Š§„¤¾1
+java:S5786C"Remove this 'public' modifier.(©èíØûÿÿÿÿ8Š§„¤¾1
 ;
-java:S5786M"Remove this 'public' modifier.(¸æ¹‹8´äºÎ¿1
+java:S5786S"Remove this 'public' modifier.(¸æ¹‹8´äºÎ¿1
 @
-java:S5786Z"Remove this 'public' modifier.(äÔõÚúÿÿÿÿ8´äºÎ¿1
+java:S5786`"Remove this 'public' modifier.(äÔõÚúÿÿÿÿ8´äºÎ¿1
 :
-java:S5786"Remove this 'public' modifier.(ŞÈø!8´äºÎ¿1
+java:S5786"Remove this 'public' modifier.(ŞÈø!8´äºÎ¿1
 6
-java:S5785("Use assertEquals instead.(ùİ»…8´äºÎ¿1
+java:S5785."Use assertEquals instead.(ùİ»…8´äºÎ¿1
 N
-java:S5838b"1Use assertThat(actual).hasSize(expected) instead.(Äü”ø8¶äºÎ¿1
+java:S5838h"1Use assertThat(actual).hasSize(expected) instead.(Äü”ø8¶äºÎ¿1

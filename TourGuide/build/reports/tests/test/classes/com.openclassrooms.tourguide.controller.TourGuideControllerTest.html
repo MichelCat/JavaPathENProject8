@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TourGuideControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TourGuideControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.openclassrooms.tourguide.controller.html">com.openclassrooms.tourguide.controller</a> &gt; TourGuideControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.072s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getNearbyAttractions_return200()</td>
+<td class="success">0.072s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-11-27T23:35:40.839+01:00  INFO 85372 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.openclassrooms.tourguide.controller.TourGuideControllerTest]: TourGuideControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-27T23:35:40.849+01:00  INFO 85372 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.openclassrooms.tourguide.TourguideApplication for test class com.openclassrooms.tourguide.controller.TourGuideControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-11-27T23:35:40.865+01:00  INFO 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : Starting TourGuideControllerTest using Java 17.0.7 with PID 85372 (started by mc386 in D:\IdeaProjects\JavaPathENProject8\TourGuide)
+2023-11-27T23:35:40.865+01:00 DEBUG 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-11-27T23:35:40.865+01:00  INFO 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-11-27T23:35:41.200+01:00  INFO 85372 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-27T23:35:41.201+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-27T23:35:41.202+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-27T23:35:41.211+01:00  INFO 85372 --- [    Test worker] c.o.t.c.TourGuideControllerTest          : Started TourGuideControllerTest in 0.359 seconds (process running for 43.404)
+2023-11-27T23:35:41.228+01:00  INFO 85372 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-27T23:35:41.229+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-27T23:35:41.230+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-27T23:35:41.265+01:00  WARN 85372 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.openclassrooms.tourguide.TourGuideController
+2023-11-27T23:35:41.266+01:00 DEBUG 85372 --- [    Test worker] c.o.tourguide.TourGuideController        : getNearbyAttractions
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getNearbyAttractions
+       Parameters = {userName=[internalUser1]}
+          Headers = []
+             Body = &lt;no character encoding set&gt;
+    Session Attrs = {}
+
+Handler:
+             Type = com.openclassrooms.tourguide.TourGuideController
+           Method = com.openclassrooms.tourguide.TourGuideController#getNearbyAttractions(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;attractionName&quot;:&quot;Roger Dean Stadium&quot;,&quot;attractionLatitude&quot;:26.890959,&quot;attractionLongitude&quot;:-80.116577,&quot;userLatitude&quot;:-41.490102,&quot;userLongitude&quot;:-13.738881,&quot;distance&quot;:6340.588384814216,&quot;rewardPoints&quot;:32},{&quot;attractionName&quot;:&quot;Cinderella Castle&quot;,&quot;attractionLatitude&quot;:28.419411,&quot;attractionLongitude&quot;:-81.5812,&quot;userLatitude&quot;:-41.490102,&quot;userLongitude&quot;:-13.738881,&quot;distance&quot;:6478.767525819528,&quot;rewardPoints&quot;:153},{&quot;attractionName&quot;:&quot;Zoo Tampa at Lowry Park&quot;,&quot;attractionLatitude&quot;:28.012804,&quot;attractionLongitude&quot;:-82.469269,&quot;userLatitude&quot;:-41.490102,&quot;userLongitude&quot;:-13.738881,&quot;distance&quot;:6496.343059725859,&quot;rewardPoints&quot;:362},{&quot;attractionName&quot;:&quot;Franklin Park Zoo&quot;,&quot;attractionLatitude&quot;:42.302601,&quot;attractionLongitude&quot;:-71.086731,&quot;userLatitude&quot;:-41.490102,&quot;userLongitude&quot;:-13.738881,&quot;distance&quot;:6797.773864049046,&quot;rewardPoints&quot;:471},{&quot;attractionName&quot;:&quot;Flatiron Building&quot;,&quot;attractionLatitude&quot;:40.741112,&quot;attractionLongitude&quot;:-73.989723,&quot;userLatitude&quot;:-41.490102,&quot;userLongitude&quot;:-13.738881,&quot;distance&quot;:6812.87693955952,&quot;rewardPoints&quot;:362}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 27 nov. 2023, 23:35:41</p>
+</div>
+</div>
+</body>
+</html>

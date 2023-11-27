@@ -1,10 +1,8 @@
 package com.openclassrooms.tourguide.service;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
-import java.util.concurrent.locks.ReentrantLock;
 
 import org.springframework.stereotype.Service;
 
@@ -51,48 +49,45 @@ public class RewardsService {
 	 * @param user User
 	 *
 	 */
-		public void calculateRewards(User user) {
-			List<VisitedLocation> userLocations = user.getVisitedLocations();
-			List<Attraction> attractions = gpsUtil.getAttractions();
+	public CompletableFuture<Void> calculateRewards(User user) {
+		return CompletableFuture.runAsync(() -> {
+				List<VisitedLocation> userLocations = user.getVisitedLocations();
+				List<Attraction> attractions = gpsUtil.getAttractions();
 
-			for(VisitedLocation visitedLocation : userLocations) {
-				for(Attraction attraction : attractions) {
-					CompletableFuture.runAsync(() -> {
+				for(VisitedLocation visitedLocation : userLocations) {
+					for(Attraction attraction : attractions) {
 						if (!user.containsUserReward(attraction.attractionName)) {
 							if(nearAttraction(visitedLocation, attraction)) {
 								user.addUserReward(new UserReward(visitedLocation, attraction, getRewardPoints(attraction, user)));
 							}
 						}
-					}, executorService);
+					}
 				}
-			}
-		}
+			}, executorService);
+	}
 
-	public void calculateRewardsForUser(User user) {
-		CompletableFuture.runAsync(() -> {
-					calculateRewards(user);
-				}).join();
+	public void calculateRewardsForAllUsers(List<User> users) {
+		List<CompletableFuture<Void>> futures = new ArrayList<>();
+		users.forEach(user -> {
+			futures.add(calculateRewards(user));
+		});
+		CompletableFuture.allOf( futures.toArray(new CompletableFuture[futures.size()]) ).join();
+
+//		users.forEach(user -> calculateRewards(user));
 //		shutdownExecutorService();
 	}
-	public void calculateRewardsForAllUsers(List<User> users) {
-		CompletableFuture.runAsync(() -> {
-				users.forEach(user -> calculateRewards(user));
-			}, executorService)
-			.join();
-		shutdownExecutorService();
-	}
 
-	public void shutdownExecutorService() {
-		// Stopping all running threads
-		executorService.shutdown();
-
-		try {
-			// Waits indefinitely for all tasks to finish executing
-			executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
-		} catch (InterruptedException e) {
-			System.out.println("Thread interrupted");
-		}
-	}
+//	public void shutdownExecutorService() {
+//		// Stopping all running threads
+//		executorService.shutdown();
+//
+//		try {
+//			// Waits indefinitely for all tasks to finish executing
+//			executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+//		} catch (InterruptedException e) {
+//			System.out.println("Thread interrupted");
+//		}
+//	}
 
 	public boolean isWithinAttractionProximity(Attraction attraction, Location location) {
 		return getDistance(attraction, location) > attractionProximityRange ? false : true;

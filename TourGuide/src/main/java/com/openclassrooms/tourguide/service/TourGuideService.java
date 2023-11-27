@@ -98,11 +98,25 @@ public class TourGuideService {
 				}, executorService)
 				// Calculate rewards
 				.thenApplyAsync(visitedLocation -> {
-					rewardsService.calculateRewards(user);
+					rewardsService.calculateRewards(user).join();
 					return visitedLocation;
 				}, executorService);
 		return completableFuture;
 	}
+
+	public void trackUserLocationForAllUsers(List<User> users) {
+//		List<CompletableFuture<VisitedLocation>> futures = new ArrayList<>();
+//		users.forEach(user -> {
+//			futures.add(trackUserLocation(user));
+//		});
+//		CompletableFuture.allOf( futures.toArray(new CompletableFuture[futures.size()]) ).join();
+
+		for (User user : users) {
+			trackUserLocation(user);
+		}
+		shutdownExecutorService();
+	}
+
 
 	public void shutdownExecutorService() {
 		// Stopping all running threads
@@ -115,6 +129,7 @@ public class TourGuideService {
 			System.out.println("Thread interrupted");
 		}
 	}
+
 
 	/**
 	 * Get the closest five tourist attractions to the user - no matter how far away they are.
@@ -142,7 +157,6 @@ public class TourGuideService {
 
 		return nearByAttractions;
 	}
-
 
 	private void addShutDownHook() {
 		Runtime.getRuntime().addShutdownHook(new Thread() {

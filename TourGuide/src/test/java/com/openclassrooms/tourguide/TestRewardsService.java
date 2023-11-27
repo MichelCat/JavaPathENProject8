@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import gpsUtil.GpsUtil;
@@ -27,9 +27,14 @@ public class TestRewardsService {
 	private RewardsService rewardsService;
 
 	@BeforeEach
-	private void setUpPerTest() {
+	private void setUpBeforeEach() {
 		gpsUtil = new GpsUtil();
 		rewardsService = new RewardsService(gpsUtil, new RewardCentral());
+	}
+
+	@AfterEach
+	private void cleanUpAfterEach() throws Exception {
+		InternalTestHelper.setInternalUserNumber(100);
 	}
 
 	@Test
@@ -62,7 +67,7 @@ public class TestRewardsService {
 		InternalTestHelper.setInternalUserNumber(1);
 		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
 
-		rewardsService.calculateRewardsForUser(tourGuideService.getAllUsers().get(0));
+		rewardsService.calculateRewards(tourGuideService.getAllUsers().get(0)).join();
 		List<UserReward> userRewards = tourGuideService.getUserRewards(tourGuideService.getAllUsers().get(0));
 		tourGuideService.tracker.stopTracking();
 

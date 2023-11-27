@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.openclassrooms.tourguide.controller.TourGuideControllerIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-27T22:35:26" hostname="DESKTOP-5737TIR" time="14.157">
+  <properties/>
+  <testcase name="getChildAlert_return204EmptyDatabase()" classname="com.openclassrooms.tourguide.controller.TourGuideControllerIT" time="14.157"/>
+  <system-out><![CDATA[2023-11-27T23:35:26.670+01:00  INFO 85372 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.openclassrooms.tourguide.controller.TourGuideControllerIT]: TourGuideControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-27T23:35:26.676+01:00  INFO 85372 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.openclassrooms.tourguide.TourguideApplication for test class com.openclassrooms.tourguide.controller.TourGuideControllerIT
+2023-11-27T23:35:26.684+01:00  INFO 85372 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-27T23:35:26.684+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-27T23:35:26.685+01:00  INFO 85372 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-27T23:35:26.705+01:00  WARN 85372 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.openclassrooms.tourguide.TourGuideController
+2023-11-27T23:35:26.709+01:00 DEBUG 85372 --- [    Test worker] c.o.tourguide.TourGuideController        : getNearbyAttractions
+2023-11-27T23:35:33.307+01:00 DEBUG 85372 --- [ool-32-thread-1] c.o.tourguide.tracker.Tracker            : Tracker Time Elapsed: 7 seconds.
+2023-11-27T23:35:33.307+01:00 DEBUG 85372 --- [ool-32-thread-1] c.o.tourguide.tracker.Tracker            : Tracker sleeping
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getNearbyAttractions
+       Parameters = {userName=[internalUser1]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.openclassrooms.tourguide.TourGuideController
+           Method = com.openclassrooms.tourguide.TourGuideController#getNearbyAttractions(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"attractionName":"Roger Dean Stadium","attractionLatitude":26.890959,"attractionLongitude":-80.116577,"userLatitude":-72.97227181664525,"userLongitude":-14.31746596333275,"distance":7525.408954899905,"rewardPoints":226},{"attractionName":"Zoo Tampa at Lowry Park","attractionLatitude":28.012804,"attractionLongitude":-82.469269,"userLatitude":-72.97227181664525,"userLongitude":-14.31746596333275,"distance":7640.918002223936,"rewardPoints":104},{"attractionName":"Cinderella Castle","attractionLatitude":28.419411,"attractionLongitude":-81.5812,"userLatitude":-72.97227181664525,"userLongitude":-14.31746596333275,"distance":7652.134200194609,"rewardPoints":295},{"attractionName":"Tiger Stadium","attractionLatitude":30.412035,"attractionLongitude":-91.183815,"userLatitude":-72.97227181664525,"userLongitude":-14.31746596333275,"distance":7957.953748367094,"rewardPoints":716},{"attractionName":"Kyle Field","attractionLatitude":30.61025,"attractionLongitude":-96.339844,"userLatitude":-72.97227181664525,"userLongitude":-14.31746596333275,"distance":8069.176754961162,"rewardPoints":679}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
